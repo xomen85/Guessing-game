@@ -1,9 +1,25 @@
 <html>
 <head>
 <title>Guessing Game for Racheal Späni</title>
+<style>
+body{
+  background-color: #CEE3F6;
+  border-style: solid;
+  padding: 10em 10em 10em 30em;}
+h1{
+  color:#0404B4;
+}
+img{
+  width: 80%;
+}
+p{
+  font-size: 18px;
+}
+</style>
 </head>
 <body>
   <h1>Missing guess parameter</h1>
+  <img src="https://eltlearningjourneys.com/wp-content/uploads/2019/04/guessing-game.jpg" alt="image">
 <p>
 <?php
   if ( ! isset($_GET['guess']) ) {
@@ -22,9 +38,10 @@
   }
 ?>
 </p>
-<form action="" method="GET">
-  <p><strong>Type your guess here;</strong></p>
-  <input type="text" name="guess" value="">
+<form action="" method="get">
+  <p><strong>Type your guess here and press enter:</strong></p>
+  <p><input type="text" name="guess" value="">
 </form>
 </body>
 </html>
+
